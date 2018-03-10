@@ -110,6 +110,7 @@ public class LooterAgent : Agent
         {
             // Give the AI more direct control, directly affect the velocity of the player. Allows for more precise movement
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.ClampMagnitude(new Vector2(act[0], act[1]), maxSpeed);
+
         }
 
         // Just in case it somehow breaks physics while it's training
